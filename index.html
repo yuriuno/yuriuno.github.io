@@ -2,15 +2,188 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <title>Yuri UNO</title>
 </head>
-<h1>HELLO</h1>
 
 <body>
+    <header class="row fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-end">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Yuri UNO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav navbar-right">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" tabindex='-1' href="#test">Test</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#links">Links</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
+    <div class='container'>
+        <main>
+            <section width=70% class="news text-center">
+                <hr>
+                <p>Our latest research paper about the Galactic distribution of OH/IR stars has just published by
+                    MNRAS.</p>
+                <iframe width="100%" height="500"
+                    src="https://academic.oup.com/mnras/article/502/2/3012/6108287?guestAccessKey=59443e58-15eb-4d3c-8915-da833bd0b2b5"
+                    frameborder="0"></iframe>
+                <hr>
+            </section>
+            <section class="row">
+                <a name='about'></a>
+                <div class="row justify-content-around">
+                    <div class="col-md-5 text-center">
+                        <img id='yuri' width=300 height=300 src="yuri.jpg" alt="yuri.jpg">
+                    </div>
+                    <div class="col-md-7">
+                        <p id='intro'>Hi, I am Yuri Uno.
+                            I am currently looking for a predoctoral position in radio astronomy.
+                            I'd like to contribute to SETI research, so I hope to get a position in a group
+                            closely working with next generation radio telescopes such as FAST, SKA, and ngVLA.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-5">
+                <hr>
+                <a name='projects'></a>
+                <div class='row'>
+                    <div class='col-md-6 text-center'>
+                        <div class="card bg-transparent" style="width: 100%; ">
+                            <img src="claran.png" class="card-img-top" alt="claran.png">
+                            <div class="card-body">
+                                <h5 class="card-title">automatic signal processing</h5>
+                                <p class="card-text">
+                                    To process large amount of data quickly, acurately and automatically, I am
+                                    developping a deep learing model to find a SETI signal.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">last updated june 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-6 text-center'>
+                        <div class="card bg-transparent" style="width: 100%;">
+                            <img src="seti.png" class="card-img-top" alt="seti.png">
+                            <div class="card-body">
+                                <h5 class="card-title">SETI signal search</h5>
+                                <p class="card-text">
+                                    The conservative method to do SETI is to look for a narrow band radio signal
+                                    which can be distinguished with natural radio signal.
+                                    I have been working on to find such artificial signal using VERA.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">last updated june 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-6 text-center'>
+                        <div class="card bg-transparent" style="width: 100%; ">
+                            <img src="dev.png" class="card-img-top" alt="dev.png">
+                            <div class="card-body">
+                                <h5 class="card-title">software development</h5>
+                                <p class="card-text">
+                                    In order to upgrade radio telescopes, we need both hardware and software
+                                    developments.
+                                    One of my main focus is to develop a new software to maximize the radio observation
+                                    efficiency.
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">last updated june 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-md-6 text-center'>
+                        <div class="card bg-transparent" style="width: 100%;">
+                            <img src="stat.png" class="card-img-top" alt="stat.png">
+                            <div class="card-body">
+                                <h5 class="card-title">statistical analysis for astronomical data</h5>
+                                <p class="card-text">
+                                    It is imperative to use statistical methods to find meaningful information in
+                                    astronomical data. In my latest research, I have modelled the distribution of
+                                    OH/IR stars in the Galactic Disk using archived data of 1612 MHz OH masers.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">last updated june 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="mt-4">
+            <section class="mt-5">
+                <a name="links"></a>
+                <h3>Links</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul>
+                            <li>
+                                <a href="https://www.masermonitoring.com">M2O project</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">
+                        <p>A maser monitoring project. </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="mt-5">
+        <div class="container d-flex justify-content-around">
+            <div class="col-lg-4">
+                <h4>Contact</h4>
+                <p class="mb-0">Yuri UNO</p>
+                <p>Email:
+                    <a href="mailto:yuriuno@icloud.com"> yuriuno@iclouod.com</a>
+                </p>
+            </div>
+            <div class="col-lg-4 text-center d-flex align-self-center">
+                <a href="https://github.com/yuriuno"><i class="fab fa-github"></i></a>
+                <a href="https://scholar.google.com/citations?user=qLdhk1YAAAAJ&hl=en"><i class="fab fa-google"
+                        aria-hidden="true"></i> </a>
+    </footer>
+    <script src="action.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
