@@ -8,21 +8,24 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&family=Noto+Serif+JP:wght@300;400;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 
+    <!-- Math Jax-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <title>Yuri UNO</title>
 </head>
 
 <body>
     <header class="row fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-end">
+        <nav id='navbar_header' class="navbar navbar-expand-lg navbar-dark bg-dark text-end">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Yuri UNO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,10 +44,13 @@
                     </ul>
                     <ul class="navbar-nav navbar-right">
                         <li class="nav-item">
-                            <a class="nav-link disabled" tabindex='-1' href="#test">Test</a>
+                            <a class="nav-link" href="#shared">Shared</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#links">Links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#exercises">Exercises</a>
                         </li>
                     </ul>
                 </div>
@@ -55,19 +61,23 @@
     <div class='container'>
         <main>
             <section width=70% class="news text-center">
-                <hr>
-                <p>Our latest research paper about the Galactic distribution of OH/IR stars has just published by
-                    MNRAS.</p>
+                <hr class="separation">
+                <div class="mb-5">
+                    <p>Our latest research paper about the Galactic distribution of OH/IR stars has just published by
+                        MNRAS.</p>
+                    <!--
                 <iframe width="100%" height="500"
                     src="https://academic.oup.com/mnras/article/502/2/3012/6108287?guestAccessKey=59443e58-15eb-4d3c-8915-da833bd0b2b5"
-                    frameborder="0"></iframe>
-                <hr>
+                    frameborder="0" ></iframe>
+-->
+                    <a name='about'></a>
+                </div>
+                <hr class="separation">
             </section>
             <section class="row">
-                <a name='about'></a>
                 <div class="row justify-content-around">
                     <div class="col-md-5 text-center">
-                        <img id='yuri' width=300 height=300 src="yuri.jpg" alt="yuri.jpg">
+                        <img id='yuri' width=300 height=300 src="images/yuri.png" alt="yuri.jpg">
                     </div>
                     <div class="col-md-7">
                         <p id='intro'>Hi, I am Yuri Uno.
@@ -76,15 +86,15 @@
                             closely working with next generation radio telescopes such as FAST, SKA, and ngVLA.
                         </p>
                     </div>
+                    <a name='projects'></a>
                 </div>
             </section>
             <section class="mt-5">
-                <hr>
-                <a name='projects'></a>
+                <hr class="separation">
                 <div class='row'>
                     <div class='col-md-6 text-center'>
                         <div class="card bg-transparent" style="width: 100%; ">
-                            <img src="claran.png" class="card-img-top" alt="claran.png">
+                            <img src="images/claran.png" class="card-img-top" alt="claran.png">
                             <div class="card-body">
                                 <h5 class="card-title">automatic signal processing</h5>
                                 <p class="card-text">
@@ -99,7 +109,7 @@
                     </div>
                     <div class='col-md-6 text-center'>
                         <div class="card bg-transparent" style="width: 100%;">
-                            <img src="seti.png" class="card-img-top" alt="seti.png">
+                            <img src="images/seti.png" class="card-img-top" alt="seti.png">
                             <div class="card-body">
                                 <h5 class="card-title">SETI signal search</h5>
                                 <p class="card-text">
@@ -115,7 +125,7 @@
                     </div>
                     <div class='col-md-6 text-center'>
                         <div class="card bg-transparent" style="width: 100%; ">
-                            <img src="dev.png" class="card-img-top" alt="dev.png">
+                            <img src="images/dev.png" class="card-img-top" alt="dev.png">
                             <div class="card-body">
                                 <h5 class="card-title">software development</h5>
                                 <p class="card-text">
@@ -131,7 +141,7 @@
                     </div>
                     <div class='col-md-6 text-center'>
                         <div class="card bg-transparent" style="width: 100%;">
-                            <img src="stat.png" class="card-img-top" alt="stat.png">
+                            <img src="images/stat.png" class="card-img-top" alt="stat.png">
                             <div class="card-body">
                                 <h5 class="card-title">statistical analysis for astronomical data</h5>
                                 <p class="card-text">
@@ -146,10 +156,39 @@
                         </div>
                     </div>
                 </div>
+                <a name="shared"></a>
             </section>
-            <hr class="mt-4">
-            <section class="mt-5">
+            <hr class="separation">
+            <section class='mt-5'>
+                <h3>Shared</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul>
+                            <li>
+                                <a href="shared/Thesis.pdf" id='master_thesis'>Master thesis</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">
+                        <p>My master thesis. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul>
+                            <li>
+                                <a href="shared/exam_answers.html" id='exam_answers' class='text-muted'>Exam answers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9 ">
+                        <p>Answers of past SOKENDAI exams (TO BE UPDATED SOON). </p>
+                    </div>
+                </div>
                 <a name="links"></a>
+            </section>
+            <hr class="separation">
+            <section class="mt-5">
                 <h3>Links</h3>
                 <div class="row">
                     <div class="col-md-3">
@@ -179,8 +218,10 @@
                 <a href="https://github.com/yuriuno"><i class="fab fa-github"></i></a>
                 <a href="https://scholar.google.com/citations?user=qLdhk1YAAAAJ&hl=en"><i class="fab fa-google"
                         aria-hidden="true"></i> </a>
+                <a href="https://twitter.com/SETIpapers"><i class="fab fa-twitter"></i></a>
     </footer>
-    <script src="action.js"></script>
+
+    <script src="javascript/action.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>

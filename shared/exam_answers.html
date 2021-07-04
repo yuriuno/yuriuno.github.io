@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&family=Noto+Serif+JP:wght@300;400;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Math Jax-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Exam Answers</title>
+</head>
+
+<body>
+    <a name="exercises"></a>
+    <hr class='separation'>
+    <h3 class="m-5 text-center">SOKENDAI -Astronomy- Solutions for Entrance Exams</h3>
+    <aside class="container pb-5 mb-5 exams">
+        <section class="m-5 mt-0 mb-5">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="text-center">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">1</th>
+                            <th scope="col">2</th>
+                            <th scope="col">3</th>
+                            <th scope="col">4</th>
+                            <th scope="col">5</th>
+                            <th scope="col">6</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-start">
+                        <tr>
+                            <th scope="row" class="math_a">2020 (R2)</th>
+                            <td scope='row' class="mecha"><a href="">Differential Equation</a></td>
+                            <td scope='row' class="math_b"><a href="">Analytical Mechanics</a></td>
+                            <td scope='row' class="elec"><a href="">Fourier Series</a></td>
+                            <td scope='row' class="elec"><a href="">Electromagnetism</a></td>
+                            <td scope='row'><a href="">Electric Circuit</a></td>
+                            <td scope='row' class="text-center">-</td>
+                        </tr>
+                        <!--
+                        <tr>
+                            <th scope="row" class="math_b">2019 (R1)</th>
+                            <td scope='row' class="math_b"><a href="">Fourier Transform</a></td>
+                            <td scope='row' class="mecha"><a href="">Probability</a></td>
+                            <td scope='row' class="qtum"><a href="">Analytical Mechanics</a></td>
+                            <td scope='row' class="elec"><a href="">Quantum Mechanics</a></td>
+                            <td scope='row'><a href="">Electric Circuit</a></td>
+                            <td scope='row' class="text-center">-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="math_a">2018 (H31)</th>
+                            <td scope='row' class="optic"><a href="">Differential Equation</a></td>
+                            <td scope='row' class="mecha"><a href="">Wave</a></td>
+                            <td scope='row' class="elec"><a href="">Mechanics</a></td>
+                            <td scope='row' class="thermo"><a href="">Electromagnetism</a></td>
+                            <td scope='row'><a href="">Thermodynamics</a></td>
+                            <td scope='row' class="text-center">-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="math_b">2017 (H30)</th>
+                            <td scope='row' class="math_b"><a href="">Neumerical Sequence</a></td>
+                            <td scope='row' class="mecha"><a href="">Statistics</a></td>
+                            <td scope='row' class="elec"><a href="">Mechanics</a></td>
+                            <td scope='row' class="qtum"><a href="">Maxwell Equation</a></td>
+                            <td scope='row'><a href="">Quantum Mechanics</a></td>
+                            <td scope='row' class="text-center">-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="math_b">2016 (H29)</th>
+                            <td scope='row' class="math_b"><a href="">Probability</a></td>
+                            <td scope='row' class="mecha"><a href="">Differential Equation</a></td>
+                            <td scope='row' class="optic"><a href="">Mechanics</a></td>
+                            <td scope='row' class="qtum"><a href="">Optics</a></td>
+                            <td scope='row'><a href="">Quantum Mechanics</a></td>
+                            <td scope='row' class="text-center">-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2015 (H28)</th>
+                            <td scope='row' class="math_b"><a href="">Linear Algebla</a></td>
+                            <td scope='row' class="thermo"><a href="">Differential Equation</a></td>
+                            <td scope='row' class="elec"><a href="">Thermodynamics</a></td>
+                            <td scope='row' class="mecha"><a href="">Electromagnetism</a></td>
+                            <td scope='row'><a href="">Mechanics</a></td>
+                            <td scope='row' class="text-center">-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="math_b">2014 (H27)</th>
+                            <td scope='row' class="math_a"><a href="">Vector Analysis</a></td>
+                            <td scope='row' class="mecha"><a href="">Calculus</a></td>
+                            <td scope='row' class="elec"><a href="">Mechanics</a></td>
+                            <td scope='row' class="qtum"><a href="">Electromagnetism</a></td>
+                            <td scope='row'><a href="">Quantum Mechanics</a></td>
+                            <td scope='row' class="text-center">-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="math_b">2013 (H26)</th>
+                            <td scope='row' class="math_a"><a href="">Probability & Linear Algebla</a></td>
+                            <td scope='row' class="mecha"><a href="">Calculus</a></td>
+                            <td scope='row' class="thermo"><a href="">Mechanics</a></td>
+                            <td scope='row' class="elec"><a href="">Thermodynamics</a></td>
+                            <td scope='row'><a href="optic">Electromagnetism</a></td>
+                            <td scope='row'><a href="" class="">Optics & Wave</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="math_a">2012 (H25)</th>
+                            <td scope='row' class="math_b"><a href="">Calculus</a></td>
+                            <td scope='row' class="mecha"><a href="">Tayler Expansion</a></td>
+                            <td scope='row' class="thermo"><a href="">Mechanics</a></td>
+                            <td scope='row' class="elec"><a href="">Thermodynamics</a></td>
+                            <td scope='row'><a href="">Electromagnetism</a></td>
+                            <td scope='row'><a href="" class="text-muted">Cosmology</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="optic">2011 (H24)</th>
+                            <td scope='row' class="thermo"><a href="">Optics & Wave</a></td>
+                            <td scope='row' class=""><a href="">Thermodynamics</a></td>
+                            <td scope='row' class=""><a href="">Signal Analysis</a></td>
+                            <td scope='row' class="mecha text-center">-</td>
+                            <td scope='row'><a href="">Circuit</a></td>
+                            <td scope='row'><a href="" class="text-muted">Cosmology</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="math_b">2010 (H23)</th>
+                            <td scope='row' class="math_a"><a href="">Vector Analysis</a></td>
+                            <td scope='row' class="mecha"><a href="">Iterative Approximation Method</a></td>
+                            <td scope='row' class="optic"><a href="">Mechanics</a></td>
+                            <td scope='row' class="elec"><a href="">Optics & Wave</a></td>
+                            <td scope='row'><a href="">RC circuit</a></td>
+                            <td scope='row'><a href="" class="text-muted">Cosmology</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="math_a">2009 (H22)</th>
+                            <td scope='row' class=""><a href="">Ordinary Differential Equation</a></td>
+                            <td scope='row' class="mecha text-center">-</td>
+                            <td scope='row' class="elec"><a href="">Analytical Mechanism</a></td>
+                            <td scope='row' class="elec"><a href="">Electromagnetism</a></td>
+                            <td scope='row'><a href="">Electric Circuit</a></td>
+                            <td scope='row'><a href="" class="text-muted">Cosmology</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="math_b">2008 (H21)</th>
+                            <td scope='row' class="math_a"><a href="">Linear Algebla & Fourier Transform</a></td>
+                            <td scope='row' class="qtum"><a href="">Differential Equation</a></td>
+                            <td scope='row' class="elec"><a href="">Quantum Mechnics</a></td>
+                            <td scope='row' class="mecha"><a href="">Electromagnetism</a></td>
+                            <td scope='row'><a href="">Mechanics</a></td>
+                            <td scope='row'><a href="" class="text-muted">Cosmology</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="math_a">2007 (H20)</th>
+                            <td scope='row' class="math_b"><a href="">Line & Surface Integral</a></td>
+                            <td scope='row' class="qtum"><a href="">Probability & Statistics</a></td>
+                            <td scope='row' class="elec"><a href="">Quantum Mechnics</a></td>
+                            <td scope='row' class="mecha"><a href="">Thermodynamics</a></td>
+                            <td scope='row'><a href="">Mechanics</a></td>
+                            <td scope='row'><a href="" class="text-muted">Cosmology</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="math_a">2006 (H19)</th>
+                            <td scope='row' class="math_b"><a href="">Linear Algebla</a></td>
+                            <td scope='row' class="thermo"><a href="">Differential Equation</a></td>
+                            <td scope='row' class="elec"><a href="">Thermodynamics</a></td>
+                            <td scope='row' class="mecha"><a href="">Electromagnetism</a></td>
+                            <td scope='row'><a href="">Mechanics</a></td>
+                            <td scope='row'><a href="" class="text-muted">Cosmology</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="math_a">2005 (H18)</th>
+                            <td scope='row' class="math_b"><a href="">Linear Algebla</a></td>
+                            <td scope='row' class="elec"><a href="">Differential Equation</a></td>
+                            <td scope='row' class="mecha"><a href="">Electromagnetism</a></td>
+                            <td scope='row' class='thermo'><a href="">Mechanics</a>
+                            <td scope='row' class=""><a href="">Thermodynamics</a></td>
+                            <td scope='row'><a href="" class="text-muted">Cosmology</a></td>
+                        </tr>
+
+                    -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!--
+        <section class="container mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Physics</h2>
+                    <div class='row'>
+                        <div class="col-lg-5 p-1">
+                            <h5>Mechanics</h5>
+                        </div>
+                        <div class='col-lg-7 p-1'>
+                            <div class="bar_mec"></div>
+                            <div>XX %</div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col-lg-5 p-1">
+                            <h5>Electromagnetism</h5>
+                        </div>
+                        <div class='col-lg-7 p-1'>
+                            <div class="bar_ele"></div>
+                            <div>XX %</div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col-lg-5 p-1">
+                            <h5>Thermodynamics</h5>
+                        </div>
+                        <div class='col-lg-7 p-1'>
+                            <div class="bar_the"></div>
+                            <div>XX %</div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col-lg-5 p-1">
+                            <h5>Quantum Mechanics</h5>
+                        </div>
+                        <div class='col-lg-7 p-1'>
+                            <div class="bar_qtu"></div>
+                            <div>XX %</div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col-lg-5 p-1">
+                            <h5>Optics & Wave</h5>
+                        </div>
+                        <div class='col-lg-7 p-1'>
+                            <div class="bar_opt"></div>
+                            <div>XX %</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-4">Mathematics</h2>
+                    <div class='row'>
+                        <div class="col-lg-5 p-1">
+                            <h5>Calculus</h5>
+                        </div>
+                        <div class='col-lg-7 p-1'>
+                            <div class="bar_cal"></div>
+                            <div>XX %</div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col-lg-5 p-1">
+                            <h5>Linear Algebla & Vector</h5>
+                        </div>
+                        <div class='col-lg-7 p-1'>
+                            <div class="bar_lin"></div>
+                            <div>XX %</div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col-lg-5 p-1">
+                            <h5>Fourier Series</h5>
+                        </div>
+                        <div class='col-lg-7 p-1'>
+                            <div class="bar_fou"></div>
+                            <div>XX %</div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col-lg-5 p-1">
+                            <h5>Probability & Statistics</h5>
+                        </div>
+                        <div class='col-lg-7 p-1'>
+                            <div class="bar_pro"></div>
+                            <div>XX %</div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col-lg-5 p-1">
+                            <h5>Complex function</h5>
+                        </div>
+                        <div class='col-lg-7 p-1'>
+                            <div class="bar_com"></div>
+                            <div>XX %</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="separation">
+        <section>
+            <div class="container">
+                <p class="mb-0">The solutions to the SOKENDAI's general entrance exams are given below along with
+                    problems. I have
+                    modified some of parts of the problems from the original ones for convenience. The original question
+                    papers are publically available at the
+                    <a href="https://guas-astronomy.jp/Applicants/exam.html">SOKENDAI's website.</a>
+                </p>
+                <p>
+                    For any comments, feedbacks, and discussions, feel free to talk to me on <a
+                        href="https://twitter.com/SETIpapers"> Twitter.</a>
+                </p>
+                <article class="row">
+                    <h3 class="exam_year">2010 (H23)</h3>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <h1 class="">[1]</h1>
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="mb-4">
+                                    <p>(1) Find a vector
+                                        \(\vec{n}(x, y, z)\)
+                                        perpendicular to the curved surface defined as
+                                    </p>
+                                    \[
+                                    f(x, y, z) = x^2 + 3y^3 + 5z^2 + 2xy + 5yz = C
+                                    \]
+                                    <p> at a point \((x, y, z)\). * \(C\) is a constant.
+                                        Normalization for \(\vec{n}\) is not necessary.
+                                    </p>
+                                    <details class="p-2">
+                                        <summary class="">solution</summary>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                        deserunt fuga doloremque modi accusamus reprehenderit officiis esse nesciunt
+                                        fugiat error, dolorum, suscipit laborum animi sit libero delectus ad!
+                                    </details>
+                                </div>
+                                <div class='mb-4'>
+                                    <p>
+                                        (2) Evaluate the following definite integral by the complex integral
+                                        method.
+                                        \[
+                                        \int_{0}^{\infty} \frac{\sin{x}}{x} dx
+                                        \]
+                                        Use
+                                        \[
+                                        f(z) = \frac{e^{iz}}{z}
+                                        \]
+                                        as complex integral function.
+                                    </p>
+                                    <details class="p-2">
+                                        <summary>solution</summary>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                        deserunt fuga doloremque modi accusamus reprehenderit officiis esse nesciunt
+                                        fugiat error, dolorum, suscipit laborum animi sit libero delectus ad!
+                                    </details>
+                                </div>
+                                <div class='mb-4'>
+                                    <p>
+                                        (3) Evaluate the following definite integral by the complex integral
+                                        method.
+                                        \[
+                                        \int_{0}^{\infty} \frac{1}{1+x^2} dx
+                                        \]
+                                    </p>
+                                    <details class="p-2">
+                                        <summary>solution</summary>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                        deserunt fuga doloremque modi accusamus reprehenderit officiis esse nesciunt
+                                        fugiat error, dolorum, suscipit laborum animi sit libero delectus ad!
+                                    </details>
+                                </div>
+                                <div class='mb-4'>
+                                    <p>
+                                        (4) When \(f(x, y)\) is defined as
+                                        \[f(x, y) = x^3 + y^3 - 3xy = 0\]
+                                        find the minimum and max values of
+                                        \[
+                                        h(x, y) = x^2 + y^2
+                                        \]
+                                        using the Lagrange's method of undetermined multiplier.
+                                    </p>
+                                    <details class="p-2">
+                                        <summary>solution</summary>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                        deserunt fuga doloremque modi accusamus reprehenderit officiis esse nesciunt
+                                        fugiat error, dolorum, suscipit laborum animi sit libero delectus ad!
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <h1 class="">[2]</h1>
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="mb-4">
+                                    <p class="">Suppose solving a first degree real variable equation \(f(x) = 0\)
+                                        by the successive approximation method. For simplicity, within the range of x,
+                                        it always satisfies \(f'(x) \equiv \frac{df}{dx} > 0\) and \(f''(x) \equiv
+                                        \frac{df^2}{dx^2} > 0\). Answerthe following questions.
+                                    </p>
+                                    <p class="">(1) Find the Taylor series for \(f(x) = 0\) expansion point \(x_n\) If
+                                        we evaluate \(f(x)\) using the first term of the expansion,
+                                        prove the approximated solution is given as
+                                        \[
+                                        x_{n+1} = x_n - \frac{f_n}{f_n'}.
+                                        \]
+                                </div>
+                                <details class="p-2">
+                                    <summary>solution</summary>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                    deserunt fuga doloremque modi accusamus reprehenderit officiis esse nesciunt
+                                    fugiat error, dolorum, suscipit laborum animi sit libero delectus ad!
+                                </details>
+                                <div class="mb-4">
+                                    <p>
+                                        (2) When \(\hat{x}\) is the true solution, suppose \(|x_n - \hat{x}|\) is
+                                        sufficiently small. Prove the following approximation is valid and write the
+                                        constant \(C\) using \(f_n, f_n',\) and \(f_n''\).
+                                    </p>
+                                </div>
+                                <details class="p-2">
+                                    <summary>solution</summary>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                    deserunt fuga doloremque modi accusamus reprehenderit officiis esse nesciunt
+                                    fugiat error, dolorum, suscipit laborum animi sit libero delectus ad!
+                                </details>
+                                <div class="mb-4">
+                                    <p> (3) From these results, find the value of
+                                        \(\sqrt{15}\) to the third decimal places and examine its accuracy.
+                                    </p>
+                                </div>
+                                <details class="p-2">
+                                    <summary>solution</summary>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                    deserunt fuga doloremque modi accusamus reprehenderit officiis esse nesciunt
+                                    fugiat error, dolorum, suscipit laborum animi sit libero delectus ad!
+                                </details>
+                                <div class="mb-4">
+                                    <p>(4) Suppose upgrading the successive approximation method. If we evaluate
+                                        \(f(x)\) using the first and the second terms of the expansion, prove the
+                                        approximated solution is given as
+                                        \[
+                                        x_{n+1} = x_n - \frac{2f_nf_n'}{2f_n'^2 - f_nf_n''}.
+                                        \]
+                                    <details class="p-2">
+                                        <summary>solution</summary>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                        deserunt fuga doloremque modi accusamus reprehenderit officiis esse nesciunt
+                                        fugiat error, dolorum, suscipit laborum animi sit libero delectus ad!
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <h1 class="">[3]</h1>
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="mb-4">
+                                    <p>
+                                        Suppose the motion of a point particle that encounters the potential described
+                                        by the following equations. When the distance from the center is defined as r,
+                                        \[
+                                        U(r) = U_0 (r \leq a)
+                                        \]
+                                        \[
+                                        U(r) = 0 (r > a)
+                                        \]
+                                        Answer the following questions with reference to the figure.
+                                    </p>
+                                </div>
+                                <div class='mb-4'>
+                                    <p>
+                                        (1) As shown in the figure above, a point particle of mass m has initial
+                                        velocity of \(v_0\), collision parameter of \(s\). When the point particle meet
+                                        the potential, the energy and angular momentum conserve. Explain why these
+                                        physical quantities conserve with the energy and angular momentum formulas.
+                                        Define the velocity of the point particle as \(v (r)\) (\(r\) is the distance
+                                        from
+                                        the potential center).
+                                    </p>
+                                    <details class="p-2">
+                                        <summary>solution</summary>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                    </details>
+                                </div>
+                                <div class='mb-4'>
+                                    <p>
+                                        (2) Then, what is the scattering angle \(\theta\) ? *Tips: Proof by exhaustion.
+                                    </p>
+                                    <details class="p-2">
+                                        <summary>solution</summary>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                    </details>
+                                </div>
+                                <div class='mb-4'>
+                                    <p>
+                                        (3) Compare the motion of the point particle of (2) with the situation when the
+                                        light travel through the medium with the refractive index \(n_0\) to the sphere
+                                        wit refractive index \(n\). Discuss the similarities and differences of these
+                                        two situation.
+                                    </p>
+                                    <details class="p-2">
+                                        <summary>solution</summary>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                        fugiat error, dolorum, suscipit laborum animi sit libero delectus ad!
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <h1 class="">[4]</h1>
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="mb-4">
+                                    <p>
+                                        test
+                                    </p>
+                                </div>
+                                <div class='mb-4'>
+                                    <p>
+                                        (1)
+                                    </p>
+                                    <details class="p-2">
+                                        <summary>solution</summary>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                        fugiat error, dolorum, suscipit laborum animi sit libero delectus ad!
+                                    </details>
+                                </div>
+                                <div class='mb-4'>
+                                    <p>
+                                        (2)
+                                    </p>
+                                    <details class="p-2">
+                                        <summary>solution</summary>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                        fugiat error, dolorum, suscipit laborum animi sit libero delectus ad!
+                                    </details>
+                                </div>
+                                <div class='mb-4'>
+                                    <p>
+                                        (3)
+                                    </p>
+                                    <details class="p-2">
+                                        <summary>solution</summary>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum facilis
+                                        fugiat error, dolorum, suscipit laborum animi sit libero delectus ad!
+                                    </details>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="row">
+                    <h3 class="exam_year">2009 (H22)</h3>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <h1 class="">[1]</h1>
+                            </div>
+                            <div class="col-lg-10">
+                                <p class="">(1) Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Omnis fugiat
+                                    aspernatur doloremque facere voluptate pariatur aliquid. Nostrum, sint tenetur
+                                    sapiente
+                                    provident aperiam quod id blanditiis voluptatum, voluptatibus libero fugiat ipsa!
+                                </p>
+                                <p class="">(2) Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor velit
+                                    cupiditate impedit molestiae deleniti magni, eveniet deserunt? Excepturi nesciunt
+                                    deleniti ipsam dolorem amet animi debitis obcaecati magnam vel consequatur. Vel?</p>
+                                <p class="">(3) Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio odio
+                                    dolore,
+                                    eius recusandae doloremque quo natus, corrupti fugiat aut a officia id nulla
+                                    reprehenderit quam quidem explicabo autem non nisi?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col">
+                            <div>
+                                <h1>test</h1>
+                            </div>
+                            <div>
+                                <h1>test</h1>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="row">
+                    <h3 class="exam_year">2008 (H21)</h3>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <h1 class="">[1]</h1>
+                            </div>
+                            <div class="col-lg-10">
+                                <p class="">(1) Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Omnis fugiat
+                                    aspernatur doloremque facere voluptate pariatur aliquid. Nostrum, sint tenetur
+                                    sapiente
+                                    provident aperiam quod id blanditiis voluptatum, voluptatibus libero fugiat ipsa!
+                                </p>
+                                <p class="">(2) Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor velit
+                                    cupiditate impedit molestiae deleniti magni, eveniet deserunt? Excepturi nesciunt
+                                    deleniti ipsam dolorem amet animi debitis obcaecati magnam vel consequatur. Vel?</p>
+                                <p class="">(3) Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio odio
+                                    dolore,
+                                    eius recusandae doloremque quo natus, corrupti fugiat aut a officia id nulla
+                                    reprehenderit quam quidem explicabo autem non nisi?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="jp">
+                            <p>問題の回答は、</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+-->
+    </aside>
+</body>
+
+</html>
